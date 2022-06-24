@@ -14,7 +14,11 @@ function draw() {
     }
 
     var angle = 1/2 * (180 - 360 / num);
-    var thickness_actual_tmp = Math.abs(thickness / Math.sin(angle));
+    var thickness_actual_tmp = thickness / Math.sin(angle * (Math.PI/180));
+
+    console.log(Math.sin(angle));
+    console.log(thickness)
+    console.log(thickness_actual_tmp)
 
     var width_mult = diameter / (2 * width);
     thickness_actual = thickness_actual_tmp / width_mult;
