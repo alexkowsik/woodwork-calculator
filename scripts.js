@@ -72,5 +72,19 @@ function draw() {
 
         ctx.lineWidth = 1;
         ctx.stroke();
+
+        // Inner lines
+        var numberOfSides = num,
+        size = width,
+        Xcenter = width,
+        Ycenter = width;
+
+        for (var i = 0; i <= numberOfSides;i += 1) {
+            ctx.beginPath();
+            ctx.moveTo (Xcenter + size * Math.cos(i * 2 * Math.PI / numberOfSides), Ycenter + size * Math.sin(i * 2 * Math.PI / numberOfSides));
+            ctx.lineTo (Xcenter + (size - thickness_actual) * Math.cos(i * 2 * Math.PI / numberOfSides), Ycenter + (size - thickness_actual) * Math.sin(i * 2 * Math.PI / numberOfSides));
+            ctx.stroke();
+        }
+        
     }
   }
