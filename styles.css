@@ -1,0 +1,33 @@
+body {
+    background-color: #292a2f;
+    color: #d1d8df;
+    width: 100%;
+}
+
+#form1 {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 350px;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+}
