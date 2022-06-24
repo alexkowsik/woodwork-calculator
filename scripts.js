@@ -34,10 +34,13 @@ function draw() {
         const ctx = canvas.getContext('2d');
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.strokeStyle = "#d1d8df";
+        ctx.setLineDash([3, 5]);
 
         ctx.beginPath();
         ctx.arc(width, width, width, 0, Math.PI * 2, true);
         ctx.stroke();
+
+        ctx.setLineDash([]);
 
         // polygon 1
         var size = width,
