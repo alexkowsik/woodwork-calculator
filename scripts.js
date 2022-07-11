@@ -24,7 +24,7 @@ function draw() {
         thickness_actual = Math.min(thickness_actual, width)
     }
 
-    var breadth = 2 * thickness_actual * width_div * Math.tan(Math.PI / num)
+    var breadth = diameter * Math.tan(Math.PI / num)
 
     document.getElementById("output").innerHTML = "Der Winkel <strong>α</strong> beträgt " 
         + Math.round(angle * 100) / 100 + "°" + " und die Breite eines Bretts beträgt " 
